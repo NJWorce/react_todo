@@ -55,11 +55,11 @@ class App extends Component {
     return (
 
       <div className="App">
-      <div classname="container">
+      <div className="container">
 
         <Header />
 
-        <AddTodo />
+        <AddTodo addTodo={this.addTodo}/>
 
         <Todos todos={this.state.todos} markComplete={this.markComplete}
         delTodo={this.delTodo}/>
